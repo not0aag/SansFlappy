@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanskrit Flappy Game</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div id="welcome-screen" class="screen">
+            <h1 class="title">Sanskrit Flappy Game</h1>
+            <p class="description">Fly through the obstacles and collect Sanskrit letters to form words. Improve your language skills with a huge library of categories </p>
+            <button id="start-button" class="neon-button">Start Game</button>
+        </div>
+        <canvas id="board"></canvas>
+    </div>
+    <footer class="footer">
+        <p>Developed by Alen George | <a href="https://github.com/not0aag" target="_blank">GitHub</a></p>
+    </footer>
+    <script>
+        document.getElementById("start-button").addEventListener("click", function() {
+            window.location.href = "index.html";
+        });
+    </script>
+    <script src="game.js"></script>
+</body>
+</html>

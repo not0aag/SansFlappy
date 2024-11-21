@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Sanskrit Flappy Bird</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="welcome-screen">
+        <h1>Sanskrit Flappy Bird</h1>
+        <p>Choose a category to start learning Sanskrit words:</p>
+        <div class="category-scroll-container">
+            <div class="category-buttons"></div>
+        </div>
+    </div>
+
+    <div id="game-container">
+        <canvas id="board"></canvas>
+        <div id="game-info">
+            <div id="score"></div>
+            <div id="current-word"></div>
+        </div>
+
+        <div id="start-screen" class="game-screen">
+            <h1>Sanskrit Flappy Bird</h1>
+            <p>Press SPACE or Click to fly</p>
+            <p>Collect the Sanskrit letters in order!</p>
+            <button id="start-button" class="btn">Start Game</button>
+            <button id="back-to-menu" class="btn secondary-btn">Back to Menu</button>
+        </div>
+
+        <div id="game-over-screen" class="game-screen">
+            <h2 id="game-over-message">Game Over!</h2>
+            <div id="collected-word"></div>
+            <div id="image-container">
+                <img id="completed-word-image" alt="Word Image">
+            </div>
+            <button id="try-again-button" class="btn">Try Again</button>
+            <button id="back-to-menu-gameover" class="btn secondary-btn">Back to Menu</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sanskrit Learning Game</p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
